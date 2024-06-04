@@ -1,0 +1,88 @@
+ /* Resetando o css */
+*{
+    margin: 0px; /* Tirando a margin da pagina */
+    padding: 0px; /* Tirando o padding da pagina */
+    box-sizing: border-box; /* medindo as medidas desde a boda da cixa */
+}
+
+ /* Criando o nosso degrade */
+body{
+    /* MUdando a font */
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+
+    /* Criação do degrade no fundo  */
+    background-image: linear-gradient( to right, rgb(186, 93, 240),  rgb(122, 190, 230));
+
+    /* Centralizando o conteudoi no meio da tela */
+    display: grid;
+    place-content: center;
+    margin-top: 70px;
+}
+
+/* Estilizando o slide caroussel */
+/* Slider Carousel style */
+h1 {
+    text-align: center;
+    margin: 1em 0;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    position: relative;
+    padding: 15px;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  
+  .gallery-wrapper {
+    overflow-x: auto;
+  }
+  
+  .arrow-left,
+  .arrow-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 20px;
+    line-height: 250px;
+    width: 40px;
+    color: #fff;
+    transition: all 600ms ease-in-out;
+    background: linear-gradient(to left, transparent 0%, rgb(104, 240, 199) 200%);
+    opacity: 0.1;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .arrow-left:hover,
+  .arrow-right:hover {
+    opacity: 1;
+  }
+  
+  .arrow-right {
+    right: 0;
+    left: auto;
+    text-align: right;
+    background: linear-gradient(to right, transparent 0%, rgb(104, 240, 199) 200%);
+  }
+  
+  .gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+  }
+  
+  .item {
+    width: 250px;
+    height: 300px;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    opacity: 0.5;
+  }
+  
+  .current-item {
+    opacity: 1;
+  }
